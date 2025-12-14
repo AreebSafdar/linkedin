@@ -233,7 +233,7 @@ function Navbar() {
                 sx={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: 3,
+                  gap: 2,
                   p: 1.5,
                   borderRadius: 1,
                   color: '#666',

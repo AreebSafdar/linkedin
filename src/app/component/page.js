@@ -236,7 +236,7 @@ export default function BasicGrid() {
                                             <CloseIcon onClick={() => console.log("Close clicked")} />
                                         </Box>
                                     }
-                                    title={`${post.user.first_name} ${post.user.last_name} }`}
+                                    title={`${post.user.first_name} ${post.user.last_name}`}
                                     subheader={
                                         <Typography sx={{ mt: 0, fontSize: 12, color: "gray" }}>
                                             {post.created_at}
@@ -250,8 +250,8 @@ export default function BasicGrid() {
 
                                 <Typography variant='h5' sx={{ color: 'black', mt: 3 }}>{post.content}</Typography>
                                 {/*show {like and comment} */}
-                                <Typography variant='p' sx={{ marginLeft: 1, mt: 3 }}>{post.likes_count} Likes</Typography>
-                                <Typography variant='p' sx={{ marginLeft: 30 }}>{post.comments_count} Comments</Typography>
+                                <Typography variant='body2' sx={{ marginLeft: 1, mt: 3 }}>{post.likes_count} Likes</Typography>
+                                <Typography variant='body2' sx={{ marginLeft: 30 }}>{post.comments_count} Comments</Typography>
                                 {/*action {like and comment} */}
 
                                 <Box sx={{ display: 'flex', gap: 3, mt: 2, mr: 2, flexWrap: 'wrap' }}>
@@ -344,7 +344,7 @@ export default function BasicGrid() {
                     </Item>
                     <br />
                     <Paper component="form" sx={{ p: '6px 6px', display: 'flex', alignItems: 'center', width: { xs: '100%', sm: '100%', md: 355 }, borderRadius: 5 }}>
-                        <card>
+                        <Card>
                             <Typography color='black' marginTop={2} marginLeft={3}>
                                 Add Youre feed back
                             </Typography>
@@ -377,7 +377,7 @@ export default function BasicGrid() {
                                 title="Saad"
                                 subheader="September 14, 2016" />
                             <Button variant="outlined"><AddIcon />Follow</Button>
-                        </card>
+                        </Card>
                     </Paper>
                 </Grid>
             </Grid>
@@ -391,100 +391,6 @@ export default function BasicGrid() {
 
 
 
-
-
-
-// // 'use client';
-
-// // import * as React from 'react';
-// // import { styled } from '@mui/material/styles';
-// // import {
-// //     Paper, Grid, Avatar, IconButton, Typography, CardContent, CardHeader,
-// //     Box, InputBase, Card
-// // } from '@mui/material';
-// // import FavoriteIcon from '@mui/icons-material/Favorite';
-// // import ShareIcon from '@mui/icons-material/Share';
-// // import MoreVertIcon from '@mui/icons-material/MoreVert';
-// // import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
-// // import PhotoSizeSelectActualIcon from '@mui/icons-material/PhotoSizeSelectActual';
-// // import NewspaperIcon from '@mui/icons-material/Newspaper';
-// // import SearchIcon from '@mui/icons-material/Search';
-// // import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-// // import Image from 'next/image';
-// // import Link from 'next/link';
-// // import LinkedInImage from '@/app/img/nightview.jpg';
-// // import LImage from '@/app/img/shoes.png';
-// // import { red } from '@mui/material/colors';
-
-// // const Item = styled(Paper)(({ theme }) => ({
-// //     backgroundColor: '#fff',
-// //     ...theme.typography.body2,
-// //     padding: theme.spacing(1),
-// //     textAlign: 'center',
-// //     color: (theme.vars ?? theme).palette.text.secondary,
-// //     ...(theme.palette.mode === 'dark' && {
-// //         backgroundColor: '#1A2027',
-// //     }),
-// // }));
-
-// // const Network = () => {
-// //     return (
-// //         <Box sx={{ flexGrow: 1, marginTop: 10 }}>
-// //             <Grid container spacing={3}>
-// //                 <Grid item xs="auto">
-// //                     <Item>
-// //                         {/* Card Section
-// //                         <CardHeader
-// //                             avatar={<Avatar sx={{ bgcolor: red[500] }}>R</Avatar>}
-// //                             action={<IconButton><MoreVertIcon /></IconButton>}
-// //                             title="Shrimp and Chorizo Paella"
-// //                             subheader="September 14, 2016"
-// //                         />
-// //                         <CardContent>
-// //                             <Image src={LinkedInImage} alt='Linkedin Image' width={300} height={150} />
-// //                             <Typography variant="body2" color="text.secondary">
-// //                                 This impressive paella is a perfect party dish...
-// //                             </Typography>
-// //                         </CardContent>
-// //                         <IconButton><FavoriteIcon /></IconButton>
-// //                         <IconButton><ShareIcon /></IconButton>
-// //                         <CardContent>
-// //                             <Typography>Method:</Typography>
-// //                             <Typography>Heat 1/2 cup of broth...</Typography>
-// //                         </CardContent>
-// //                     </Item>
-// //                 </Grid>
-
-// //                 <Grid item xs={6}>
-// //                     <Item>
-// //                         <Paper component="form" sx={{ p: '3px 4px', display: 'flex', alignItems: 'center', width: 300, borderRadius: 5 }}>
-// //                             <AccountCircleIcon color="info" />
-// //                             <SearchIcon />
-// //                             <InputBase placeholder="Search a post" sx={{ ml: 1, flex: 1 }} />
-// //                         </Paper>
-// //                         <Typography variant="body2" color="text.secondary">
-// //                             <ul className="navigation-menu">
-// //                                 <li><SmartDisplayIcon color="success" /><Link href="/">Video</Link></li>
-// //                                 <li><PhotoSizeSelectActualIcon color="primary" /><Link href="/">Photos</Link></li>
-// //                                 <li><NewspaperIcon color="warning" /><Link href="/">Write Article</Link></li>
-// //                             </ul>
-// //                         </Typography>
-// //                     </Item>
-// //                 </Grid>
-
-// //                 <Grid item xs>
-// //                     <Item>
-// //                         <Typography>Today view surface</Typography>
-// //                         <Image src={LImage} alt='Linkedin Image' width={300} height={200} />
-// //                     </Item>
-// //                 </Grid>
-// //             </Grid>
-
-// //         </Box>
-// //     );
-// // };
-
-// // export default Network;
 
 
 
